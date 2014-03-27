@@ -4,10 +4,14 @@ python:
   - "2.7"
   - "3.2"
   - "3.3"
+services:
+  - neo4j
+  
 # command to install dependencies
 install: 
   - pip install paver
   - paver sdist
+  
 
 # command to run tests
 script:
